@@ -1,0 +1,145 @@
+.container2 {  display: grid;
+    grid-template-columns: 0.1fr 1.9fr 1.9fr 0.1fr;
+    grid-template-rows: 0.75fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Logo Logo .";
+    margin-top: 20px;
+}
+
+.Logo {
+    grid-area: Logo;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {  display: grid;
+    grid-template-columns: 0.1fr 1.9fr 1.9fr 0.1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr 0.1fr 0.1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Sign-In Sign-In ."
+      ". Email-Address Email-Address ."
+      ". Password Password ."
+      ". Sign-In-Button Sign-In-Button ."
+      ". Terms Terms ."
+      ". Keep-Me-Signed-In Keep-Me-Signed-In ."
+      ". New-To-Moneyzgone New-To-Moneyzgone ."
+      ". Create-Account Create-Account .";
+    height: 60vh;
+    width: 500px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+}
+  
+.Sign-In {
+    display: flex;
+    grid-area: Sign-In;
+    font-family: sans-serif;
+    text-align: start;
+    align-items: flex-end;
+}
+  
+.Email-Address {
+    grid-area: Email-Address;
+    align-self: center;
+}
+  
+.Password {
+    grid-area: Password;
+    align-self: center;
+}
+  
+.Sign-In-Button {
+    grid-area: Sign-In-Button;
+}
+  
+.Terms {
+    grid-area: Terms;
+}
+  
+.Keep-Me-Signed-In {
+    display: flex;
+    flex-flow: row;
+    grid-area: Keep-Me-Signed-In;
+    font-weight: 450;
+    font-size: larger;
+    align-items: center;
+}
+
+.Keep-Me-Signed-In span {
+    margin-right: 10px;
+}
+  
+.New-To-Moneyzgone {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: New-To-Moneyzgone;
+    text-align: center;
+    color: gray;
+    font-size: small;
+}
+
+.New-To-Moneyzgone span::before {
+    content: "   ";
+}
+
+.StrikeThrough {
+    color: white;
+    text-decoration: line-through;
+    text-decoration-color: gray;
+}
+  
+.Create-Account {
+    grid-area: Create-Account;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+    min-width: 100%;
+    min-height: 45px;
+}
+
+button {
+    min-width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    min-width: 100%;
+    min-height: 45px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.button-yellow {
+    background-image: linear-gradient(to bottom, #FEF0BD 0%, #F4CF76 100%);
+}
+
+.gray-button {
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #ECECED 100%);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.ForgotPassword {
+    text-align: right;
+    float: right;
+}
